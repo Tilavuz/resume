@@ -11,6 +11,10 @@ body {
     padding: 200px;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 ul {
     list-style: none;
 }
@@ -203,4 +207,18 @@ a {
     display: flex;
     flex-direction: column;
     gap: 10px 0;
+}
+
+@media only screen and (max-width: 1480px) {
+    .resume__left {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .experience__box {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
